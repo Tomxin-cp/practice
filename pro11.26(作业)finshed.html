@@ -1,0 +1,134 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-11-26 20:14:44
+ * @LastEditTime: 2020-11-27 17:05:47
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \pro\pro11.26(作业).html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro11.26(作业)</title>
+    <style>
+        .father{
+            width: 1100px;
+            height: 1100px;
+        }
+        .box1{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .clearfix1::after{
+            content: "";
+            visibility: hidden;
+            clear: both;
+            display: block;
+            height: 0px;
+        }
+        .box2{
+            background-color: rgb(228, 85, 20);
+            height: 50px;
+            width: 150px;
+            float: right;
+        }
+        .box3{
+            background-color:blueviolet;
+            width: 900px;
+            float: right;
+            height: 50px;
+        }
+        .box4{
+            background-color: yellow;
+            width: 800px;
+            height: 150px;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .clearfix1::after{
+            content: "";
+            visibility: hidden;
+            clear: both;
+            display: block;
+            height: 0px;
+        }
+        .box5{
+            background-color: yellow;
+            width: 800px;
+            height: 150px;
+            float: left;
+        }
+        .box6{
+            background-color: rgb(230, 147, 23);
+            width: 90px;
+            height: 310px;
+            float: right;
+            margin-left: 1px;
+        }
+        .box7{
+            background-color:cornflowerblue;
+            width: 190px;
+            height: 370px;
+            float: right;
+            margin-left: 1px;
+            /* display: inline-block; */
+        }
+        .box8{
+            background-color: red;
+            width: 900px;
+            height: 50px;
+            float: left;
+        }
+        .bd{
+            margin-bottom: 10px;
+        }
+        .box9{
+            background-color:pink;
+            width: 1100px;
+            height: 50px;
+        }
+        .b456{
+            width: 900px;
+            margin-bottom: 10px;
+        }
+        .b4568{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="hd clearfix1">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+        <div class="bd clearfix1">
+            <div class="box7"></div>
+            <div class="b4568">
+                <div class="are">
+                    <div class="clearfix1">
+                        <div class="b456 clearfix1">
+                            <div class="box6"></div>
+                            <div class="box4"></div>
+                            <div class="box5"></div>
+                        </div>
+                        <div class="box8"></div>
+                    </div>   
+                    
+                </div>
+            
+            </div>
+        </div>
+        <div class="foot">
+            <div class="box9"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

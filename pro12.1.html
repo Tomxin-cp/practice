@@ -1,0 +1,113 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-12-01 15:51:45
+ * @LastEditTime: 2020-12-02 19:50:32
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \pro\pro12.1.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro12.1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -150px;
+            margin-left: -150px;
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            transition-property: all;
+            transition-duration: 5s;
+        }
+        .items{
+            border: 1px solid;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+        aside{
+            background-color: yellow;
+            }
+        nav{
+            background-color: blue;
+            }
+        header,footer{
+            flex:0 0 10vh;
+        }
+        header{
+            background-color: burlywood;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+        .main{
+            position: relative;
+            background-color: chartreuse;
+            flex-grow: 1;
+
+        }
+        nav,aside{
+            flex: 0 0 10vw;
+        }
+        footer{
+            background-color: crimson;
+        }
+        .wrap:hover{
+            width: 400px;
+            height: 400px;
+        }
+        p{
+            text-align: 2em;
+        }
+        .p{
+            margin-top: 10%;
+            transition:all 2s liner;
+        }
+        .p:hover{
+            margin-top: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <section>
+        <nav>nav</nav>
+        <div class="main">main
+            <div class="wrap">
+                <div class="items">items1</div>
+                <div class="items">items2</div>
+                <div class="items">items3</div>
+                <div class="items">items4</div>
+                <div class="items">items5</div>
+                <div class="items">items6</div>
+                <div class="items">items7 甄姬</div>
+                
+            </div>
+        </div>
+        <aside>aside</aside>
+    </section>
+    <footer>footer</footer>
+</body>
+</html>

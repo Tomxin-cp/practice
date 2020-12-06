@@ -1,0 +1,242 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-11-29 10:19:29
+ * @LastEditTime: 2020-11-30 16:51:25
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \pro\pro11.29.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro11.29</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* body{
+            width: 1366px;
+            height: 100%;
+            margin: 0 auto;
+        } */
+        /* .father{
+            margin: 100px auto;
+            border: 1px solid;
+            width: 300px;
+            height: 300px;
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            position: fixed;
+            top: 60px;
+            left: 60px;
+        }
+        .son2{
+            width: 100px;
+            height: 100px;
+            background-color: darkblue;
+        }
+        .father span{
+            width: 50px;
+            height: 50px;
+            background-color: cornflowerblue;
+            position: fixed;
+            top: 300px;
+            right: 300px;
+        } */
+        .clearfix::after{
+            content: "";
+            visibility: hidden;
+            clear: both;
+            display: block;
+            height: 0px;
+        }
+        .nav{
+            
+            /* position: fixed;
+            top: 0px; */
+            width: 100%;
+            height: 62px;
+            background-color: rgb(239, 244, 250);
+            
+        }
+        .son{
+            background-color:red;
+            width: 1291px;
+            height: 62px;
+            line-height:62px;
+            margin: 0px auto;
+
+
+        }
+        .logo{
+            float: left;
+            line-height:62px;
+        }
+        img{
+            vertical-align: middle;
+        }
+        /* ul{
+            float: right;
+        } */
+        .topb{
+            font-size: 12px;
+            float: right;
+            list-style: none;
+            
+        }
+        li a{
+            text-decoration: none;
+            color: rgb(29, 84, 148);
+        }
+        .bd{
+            /* margin: 25px; */
+            margin: 25px auto;
+            width: 915px;
+            height: 390px;
+            padding: 73px 188px 62px 188px;
+            /* background-color: rgb(29, 84, 148); */
+        }
+        .left{
+            width: 520px;
+            height: 390px;
+            /* display: inline-block; */
+            float: left;
+            background-image: url(./qq-mail/qq_mail_bg.jpg);
+        }
+        .right{
+            border: 1px solid;
+            width: 337px;
+            height: 390px;
+            /* display: inline-block; */
+            /* background-color: sienna; */
+            /* margin-top: 96px; */
+            border-radius: 5px;
+            float: right;
+            /* padding-top: 17px; */
+            box-sizing: border-box;
+        }
+        .top{
+            border-bottom: 1px solid #a0b1c4;
+            /* margin-top: 17px; */
+            height: 52px;
+            padding-bottom: 17px;
+            box-sizing: border-box;
+            background-color:#eff4fa;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+        }
+        .vx{
+            margin-left: 53px;
+            font-size: 16px;
+            color:#9a9a9a;
+            cursor: pointer;
+            line-height: 52px;
+        }
+        .qq{
+            margin-left: 106px;
+            color:"#999999";
+            font-size: 16px;
+            color:"#9a9a9a";
+            cursor: pointer;
+        }
+        .qq:active{
+            color:#333333;
+        }
+        .low{
+            width: 285px;
+            margin: 37px auto;
+        }
+        .low .username{
+            width: 285px;
+            height: 40px;
+        }
+        .low #urn{
+            margin-bottom: 10px;
+        }
+        .low .password{
+            width: 285px;
+            height: 40px;
+        }
+        .low .username,.password{
+            outline: none;
+        }
+        .foot{
+            width: 100%;
+            height: 36px;
+            background-color: rgb(239, 244, 250);
+        }
+        .foot-area{
+            width: 915px;
+            margin: 45px auto;
+            height: 36px;
+            line-height: 36px;
+        }
+        .foot-area li{
+            display: inline;
+            vertical-align: middle;
+            font-size: 12px;
+        }
+        .bq{
+            color: rgb(146, 147, 148);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="father">
+        <div class="son"></div>
+        <div class="son2"></div>
+        <span>span</span>
+    </div> -->
+    <div class="nav clearfix">
+        <div class="son">
+        <h1 class="logo"><img src="./qq-mail/qqmail_logo.png" alt=""></h1>
+        <ul>
+            <li class="topb"><a href="">企业邮箱</a></li>
+            <li class="topb"><a href="">手机版&nbsp;|&nbsp;</a></li>
+            <li class="topb"><a href="">Elish&nbsp;|&nbsp;</a></li>
+            <li class="topb"><a href="">基本版&nbsp;|&nbsp;</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="bd">
+        <div class="left clearfix"></div>
+        <div class="right clearfix">
+            <div class="right-area">    
+                <div class="top">
+                    <span class="vx">微信登录</span><span class="qq">QQ登录</span>
+                </div>
+                <div class="low">
+                    <div id="urn"><input type="text" class="username" placeholder="微信/QQ/手机号"></div>
+                    <div id="pwd"><input type="password" class="password" placeholder="密码"></div>
+                    <input type="checkbox" id="denglu">
+                    <label for="denglu">下次自动登录</label>
+                    <input type="submit">登录
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-area">
+            <ul>
+                <li><a href="">关于腾讯&nbsp;|&nbsp</a></li>
+                <li><a href="">服务条款&nbsp;|&nbsp</a></li>
+                <li><a href="">隐私政策&nbsp;|&nbsp</a></li>
+                <li><a href="">客服中心&nbsp;|&nbsp</a></li>
+                <li><a href="">联系我们&nbsp;|&nbsp</a></li>
+                <li><a href="">帮助中心&nbsp;|&nbsp</a></li>
+                <li class="bq">©1998 - 2020 Tencent Inc. All Rights Reserved.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <section>主要内容</section> -->
+    <!-- <span class="left ad">left</span> -->
+    <!-- <span class="right ad">right</span> -->
+</body>
+</html>

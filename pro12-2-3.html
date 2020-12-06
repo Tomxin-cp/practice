@@ -1,0 +1,78 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-12-02 20:22:18
+ * @LastEditTime: 2020-12-03 17:03:43
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \pro\pro12-2-3.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro12-2-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            position: relative;
+            margin: 50px auto   ;
+            border: 5px solid skyblue;
+            width: 200px;
+            height: 186px;
+            overflow: hidden;
+            /* text-align: center; */
+            perspective: 1000px;
+
+        }
+        img{
+            width: 200px;
+            transition: all 0.5s;
+        }
+        .art{
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            transition: all 2s;
+            transform: rotateX(80deg);
+            transform-origin: left bottom;
+            z-index: -1;
+            background-color: brown;
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            width: 100%;
+            /* height: 100%; */
+            margin-top: 30px;
+            text-align: center;
+            /* margin-left: 50%; */
+
+        }
+        p{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0px;
+            text-indent: 2em;
+        }
+        .wrap:hover img{
+            transform: translate(0,-100%);
+        }
+        .wrap:hover .art{
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <img src="../pro/practise/lqtimg.jpg" alt="">
+        <div class="art">
+            <h1>李沁</h1>
+            <p>来自中国</p>
+        </div>
+    </div>
+</body>
+</html>

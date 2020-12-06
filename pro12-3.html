@@ -1,0 +1,117 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-12-03 18:10:58
+ * @LastEditTime: 2020-12-03 20:32:17
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \pro\pro12-3.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro12-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .wrap{
+            margin: 100px;
+            margin-left: 50%;
+            margin-right: 50%;
+            position: relative;  
+            transform-style: preserve-3d;
+            transform: rotateX(50deg) rotateY(60deg);
+            box-sizing: border-box;
+        }
+        .wrap div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .son1{
+            background-color: brown;
+            transform: translateX(-100px) rotateY(270deg);
+        }
+        .son2{
+            background-color: burlywood;
+            transform: translateX(100px) rotateY(90deg);
+        }
+        .son3{
+            background-color: chartreuse;
+            transform: translateY(-100px) rotateX(90deg);
+        }
+        .son4{
+            background-color: cornflowerblue;
+            transform: translateY(100px) rotateX(270deg);
+        }
+        .son5{
+            background-color: cyan;
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+        .son6{
+            background-color: darkmagenta;
+            transform: translateZ(100px);
+        } */
+        ul{
+            margin: 40px;
+            margin-left: 30%;
+            line-height: 100px;
+            vertical-align: middle;
+
+
+        }
+        li{
+            background-color: darkorange;
+            float: left;
+            list-style: none;
+            margin-left: 10px;
+            width: 4px;
+            height: 20px;
+        }
+        .box1{
+            transform: scale(0.6);
+            animation-fill-mode:both;
+            animation:sport 0.5s linear 0.5s infinite alternate-reverse;
+        }
+        .box2{
+            animation:sport 0.5s linear 0s infinite;
+            animation-fill-mode:both;
+        }
+        .box3{
+            transform: scale(0.8);
+            animation:sport 0.5s linear 0.3s infinite alternate-reverse;
+            animation-fill-mode:both;
+        }
+        @keyframes sport{
+            0%{
+                transform: scale(1,0.5);
+                opacity: 0.2;
+            }
+            100%{
+                transform: scale(1,1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="wrap">
+        <div class="son1">1</div>
+        <div class="son2">2</div>
+        <div class="son3">3</div>
+        <div class="son4">4</div>
+        <div class="son5">5</div>
+        <div class="son6">6</div>
+    </div> -->
+    <ul>
+        <li class="box1"></li>
+        <li class="box2"></li>
+        <li class="box3"></li>
+    </ul>
+</body>
+</html>

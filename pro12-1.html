@@ -1,0 +1,67 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-12-01 19:04:35
+ * @LastEditTime: 2020-12-02 19:28:40
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \pro\pro12-1.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            border: 1px solid;
+            border-radius: 5px;
+            margin: 50px auto;
+            width: 638px;
+            height: 644px;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .head{
+            line-height: 50px;
+            text-align: center;
+        }
+        p{
+            text-indent: 2em;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        .wrap:hover .photo{
+            top: 100%;
+        }
+        .photo{
+            transition:all 0.5s;
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            filter: blur(2px) opacity(80%);
+            transform: rotate(50deg);
+            transform-origin: center bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head">
+            <h1>许昌学院</h1>
+        </div>
+        <p>记者从国家航天局获悉，北京时间12月2日4时53分，探月工程嫦娥五号着陆器和上升器组合体完成了月球钻取采样及封装。探测器于12月1日23时许成功着陆月面后，开展了太阳翼展开、机构解锁等相关准备工作。目前，着陆器和上升器组合体正按计划进行表取采样。嫦娥五号探测器自动采样任务采用表钻结合，多点采样的方式，设计了钻具钻取和机械臂表取两种“挖土”模式。
+            （总台央视记者 崔霞 王世玉 李厦 李宁 杨弘杨 吴天白 陶嘉树 国家航天局 段逊）</p>
+        <div class="photo">
+            <img src="../pro/practise/lqtimg.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

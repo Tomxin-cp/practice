@@ -1,0 +1,113 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-11-26 18:18:01
+ * @LastEditTime: 2020-11-26 19:57:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \pro\pro11.26.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro11.26</title>
+    <style>
+        /* .dhz{
+            border: 1px solid;
+            width: 700px;
+            height: 700px;
+        }
+        .box1{
+            background-color: rgb(36, 33, 33);
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+        .box2{
+            background-color: rgb(53, 20, 199);
+            width: 100px;
+            height: 100px;
+        }
+        .box3{
+            background-color: rgb(126, 124, 136);
+            width: 150px;
+            height: 150px;float: right;
+        }
+        .box4{
+            background-color: rgb(94, 214, 83);
+            width: 200px;
+            height: 200px;
+            float: right;
+        } */
+        .father1{
+            /* height: 200px; */
+            background-color: rgb(40, 114, 175);
+        }
+        .box1{
+            background-color: rgb(170, 43, 43);
+        }
+        .box2{
+            background-color: rgb(170, 43, 43);
+        }
+        .box3{
+            background-color: rgb(170, 43, 43);
+            }
+        .father1 div{
+            float: left;
+        }
+        .father2{
+            margin-top: 50px;
+            /* clear: both; */
+            background-color: rgb(40, 114, 175);
+        }
+        .box5{
+            background-color: rgb(170, 43, 43);
+        }
+        .box6{
+            background-color: rgb(170, 43, 43);
+        }
+        .box7{
+            background-color: rgb(170, 43, 43);
+            }
+        .father2 div{
+            float: left;
+        }
+        /* .wall{ */
+            /* height: 200px; */
+            /* clear: both; */
+        /* } */
+        .father1::after{
+            content: "456";
+            clear: both;
+            display: block;
+            height: 0px;
+            /* visibility: hidden; */
+        }
+        .son::after{
+            content: "123";
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="dhz">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div> -->
+    <div class="father1">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    <!-- <div class="wall"></div> -->
+    <div class="father2">
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+        <div class="box7">box7</div>
+    </div>
+    <div class="son">das</div>
+</body>
+</html>
